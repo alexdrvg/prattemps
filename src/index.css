@@ -1,0 +1,41 @@
+/* Tokens de disseny de PratTemps (guia d'estil, figura 4) */
+:root {
+  --fons: #e8f1fb;
+  --fons-2: #cfe3f7;
+  --targeta: #ffffff;
+  --text: #10233d;
+  --text-suau: #5b6b80;
+  --vora: #d6e2f0;
+
+  --primari: #1f6feb;
+  --primari-fosc: #1554b8;
+  --primari-suau: #e3eefe;
+  --accent: #f6a609;
+  --error: #c62828;
+  --error-fons: #fdecea;
+
+  --radi: 18px;
+  --radi-petit: 12px;
+  --ombra: 0 4px 16px rgba(16, 35, 61, 0.08);
+  --espai: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--fons), var(--fons-2));
+  background-attachment: fixed;
+}
+
+button {
+  font-family: inherit;
+}
