@@ -1,0 +1,14 @@
+.targeta {
+  background: var(--targeta);
+  border-radius: var(--radi);
+  box-shadow: var(--ombra);
+  padding: calc(var(--espai) * 3);
+  min-width: 0;
+  min-height: 160px;
+}
+
+@media (max-width: 720px) {
+  .targeta {
+    padding: calc(var(--espai) * 2);
+  }
+}

@@ -1,0 +1,20 @@
+.dada {
+  padding: calc(var(--espai) * 1.5) calc(var(--espai) * 2);
+  background: var(--primari-suau);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi-petit);
+  min-width: 0;
+}
+
+.etiqueta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-suau);
+}
+
+.valor {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}

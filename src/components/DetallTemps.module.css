@@ -1,0 +1,90 @@
+.ciutat {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.pais {
+  color: var(--text-suau);
+}
+
+.hora {
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-suau);
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--espai) * 2);
+  margin: calc(var(--espai) * 2) 0 calc(var(--espai) * 3);
+}
+
+.icona {
+  flex: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--primari-suau);
+  display: grid;
+  place-items: center;
+}
+
+.resum {
+  min-width: 0;
+}
+
+.temperatura {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.descripcio {
+  margin: var(--espai) 0 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.minmax {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-suau);
+}
+
+.dades {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: calc(var(--espai) * 2);
+}
+
+@media (max-width: 720px) {
+  .ciutat {
+    font-size: 24px;
+  }
+
+  .temperatura {
+    font-size: 56px;
+  }
+
+  .icona {
+    width: 88px;
+    height: 88px;
+  }
+
+  .icona img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .dades {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: calc(var(--espai) * 1.5);
+  }
+}

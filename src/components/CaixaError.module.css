@@ -1,0 +1,10 @@
+.error {
+  margin: 0;
+  padding: calc(var(--espai) * 1.5) calc(var(--espai) * 2);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--error);
+  background: var(--error-fons);
+  border: 1px solid var(--error);
+  border-radius: var(--radi-petit);
+}

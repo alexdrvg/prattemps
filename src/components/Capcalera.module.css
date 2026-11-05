@@ -1,0 +1,46 @@
+.capcalera {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--espai) * 2);
+  background: var(--targeta);
+  border-radius: var(--radi);
+  box-shadow: var(--ombra);
+  padding: calc(var(--espai) * 2);
+}
+
+.logo {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--accent);
+  display: grid;
+  place-items: center;
+}
+
+.sol {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffd45c;
+}
+
+.titol {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.subtitol {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-suau);
+}
+
+@media (max-width: 720px) {
+  .titol {
+    font-size: 28px;
+  }
+}

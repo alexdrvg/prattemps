@@ -1,0 +1,30 @@
+.carregant {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--espai) * 1.5);
+  padding: calc(var(--espai) * 2);
+  font-weight: 700;
+  color: var(--text-suau);
+}
+
+.spinner {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--vora);
+  border-top-color: var(--primari);
+  border-radius: 50%;
+  animation: gira 0.8s linear infinite;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 2.4s;
+  }
+}
