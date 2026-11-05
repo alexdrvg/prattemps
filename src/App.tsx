@@ -20,7 +20,7 @@ export default function App() {
           triadaId={ciutat.id}
           alTriar={setCiutatId}
         />
-        <TargetaTemps ciutat={ciutat} />
+        <TargetaTemps key={ciutat.id} ciutat={ciutat} />
       </main>
       <footer className={estils.peu}>
         Dades: OpenWeather · Prat FP · 0488 Desenvolupament d'interfícies
